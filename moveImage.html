@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Moving an Image</title>
+    <script language="JavaScript">
+        let count;
+        let posLeft;
+        let posRight;
+        let obj;
+
+        function Init() {
+            count = 0;
+            obj = document.getElementById("logo").style;
+            posLeft = parseInt(obj.left);
+            posRight = parseInt(obj.right);
+
+            FlyLogo();
+        }
+
+        function FlyLogo() {
+            document.getElementById("debug").innerHTML = "<p>The image is now at " + posLeft + " from the left side of the screen and " + posRight + " from the right side of the screen</p>";
+
+            if (count < 5) {
+                if (posLeft <= 100) {
+                    count++;
+                    posLeft = 1000;
+                    posRight = 1000;
+                }
+                posLeft -= 50;
+                posRight -= 50;
+                setTimeout('FlyLogo()', 200);
+                obj.left = posLeft + 'px';
+                obj.top = posRight + 'px';
+            } else {
+                obj.left = 200 + 'px';
+                obj.top = 200 + 'px';
+            }
+        }
+    </script>
+</head>
+<body onload="Init()">
+<h1>Moving an Image</h1>
+<div id="logo" style="top: 1000px; z-index: 4; left: 1000px; visibility: visible; position: absolute;">
+    <img src="./images/light-bulb-on.jpg">
+</div>
+<div id="debug" style="top: 100px; left: 10px; width: 80%; position: relative; background: pink"></div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sniff</title>
+    <script language="JavaScript">
+        <!--
+
+        function Sniff() {
+            browser = new Is();
+            browser.display();
+        }
+
+        function Is() {
+            this.app = navigator.appName.toLowerCase();
+            this.version = navigator.appVersion;
+            this.major = parseInt(navigator.appVersion);
+            this.minor = parseFloat(navigator.appVersion);
+            this.codename = navigator.appCodeName.toLowerCase();
+            this.agent = navigator.userAgent.toLowerCase();
+            this.language = navigator.language;
+            this.mime = navigator.mimeTypes.length;
+            this.display = showData;
+        }
+
+        function showData() {
+            win = open("", "newWin");
+            win.document.write("<body>");
+            win.document.writeln("<h1>About your browser</h1>");
+            win.document.writeln("<p><em>Application</em> " + this.app);
+            win.document.writeln("<p><em>Agent</em> " + this.agent);
+            win.document.writeln("<p><em>Codename</em> " + this.codename);
+            win.document.writeln("<p><em>Version</em> " + this.version);
+            win.document.writeln("<p><em>Version (major)</em> " + this.major);
+            win.document.writeln("<p><em>Version (minor)</em> " + this.minor);
+            win.document.writeln("<p><em>Language</em> " + this.language);
+            win.document.writeln("<p><em>Mime Types</em> " + this.mime);
+            win.document.writeln("</body>");
+            win.document.close();
+        }
+        //-->
+    </script>
+</head>
+<body onload="Sniff()">
+
+</body>
+</html>

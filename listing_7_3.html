@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Binding an Event to a DOM Element</title>
+</head>
+<body>
+<button type="button" id="btn">Button</button>
+<script language="JavaScript">
+    let btn = document.getElementById("btn");
+    function alertMessage() {
+        alert("click the button");
+    }
+
+    btn.addEventListener("click", alertMessage, false);
+
+    if (btn.removeEventListener){
+        btn.removeEventListener("click", alertMessage, false);
+    } else {
+        btn.detachEvent("click", alertMessage);
+    }
+</script>
+</body>
+</html>

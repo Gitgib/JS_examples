@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Using Exceptions</title>
+</head>
+<body onload="RunTest()">
+<script language="JavaScript">
+    <!--
+    function InputException(msg) {
+        this.val = msg;
+        this.toString = function () {
+            return "Input Exception in " + this.val
+        };
+    }
+
+    function AreLetters(msg) {
+        var input = msg;
+        var re = new RegExp("[^a-zA-Z]");
+        if(input.match(re)) {
+            Oops = new InputException(input);
+            throw Oops;
+        }
+    }
+
+    function RunTest() {
+        document.writeln("<h1>Using Exceptions</h1>");
+        var input = prompt("Type Something", "");
+
+        try {
+            AreLetters(input);
+            document.writeln("<p>You only see this if the exception is not thrown</p>");
+        } catch (e) {
+            document.writeln("<p>" + e.toString() + "</p>");
+            document.close();
+        }
+
+        document.close();
+    }
+    //-->
+</script>
+</body>
+</html>

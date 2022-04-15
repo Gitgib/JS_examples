@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Submit</title>
+</head>
+<body>
+    <form>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname"><br>
+        <input type="submit" value="Submit" onclick="showData()">
+    </form>
+    <script language="JavaScript">
+        <!--
+        function showData() {
+            let fname = document.getElementById("fname").value;
+            let lname = document.getElementById("lname").value;
+            let winFeature = 'scrollbars=no,resizable=yes';
+            win = open("Exercise 3", "newWin", winFeature);
+            win.document.write("<body>");
+            win.document.writeln("<h1>Exercise 3 on Using JavaScript Objects</h1>")
+            win.document.writeln("Your first name is " + fname + " and your last name is " + lname);
+            win.document.writeln("</body>")
+            win.document.close();
+        }
+        //-->
+    </script>
+</body>
+</html>

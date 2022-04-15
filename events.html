@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Handling Events</title>
+</head>
+<body onload="ShowLoaded()" onunload="SayGoodbye()">
+    <h1>Handling Events</h1>
+    <p>
+        <a href="#" onmouseover="Mouse()">A Hyperlink</a>
+    </p>
+    <form>
+        <input type="button"
+        value="Click Me!"
+        onclick="Clicked()"
+        onmouseover="Mouse()">
+    </form>
+    <script language="JavaScript">
+        <!--
+        function ShowLoaded() {
+            alert("The page has loaded");
+        }
+
+        function SayGoodbye() {
+            alert("Goodbye, thanks for visiting");
+        }
+
+        function Clicked() {
+            alert("You clicked the button");
+        }
+
+        function Mouse() {
+            alert("The mouse is over the link");
+        }
+        //-->
+    </script>
+</body>
+</html>

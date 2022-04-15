@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 1 on Dates of Chapter 7</title>
+</head>
+<body>
+<h1>Dates - Exercise 1</h1>
+<form action="#">
+    <label for="someDate">Date:</label>
+    <input type="text" id="someDate">
+    <input type="button" value="Hit me!" onclick="addYears()">
+</form>
+<p id="display"></p>
+<script type="text/javascript">
+    <!--
+    function addYears() {
+        let someDate = document.getElementById("someDate").value;
+        let lastDate = Date.parse(someDate) + 2209200000000;
+        let date = new Date(lastDate);
+        document.getElementById("display").innerHTML = date.toString();
+    }
+    //-->
+</script>
+</body>
+</html>

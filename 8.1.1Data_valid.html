@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Data Validation</title>
+</head>
+<body>
+    <form method="post" action="#">
+        <table border="0">
+            <tr>
+                <th>Your Name</th>
+                <td><input type="text" maxlength="24" id="name"></td>
+            </tr>
+            <tr>
+                <th>Your Age</th>
+                <td><input type="text" size="3" maxlength="3" id="age"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="Submit" onclick="Validate()"></td>
+                <td><input type="reset" value="Reset"></td>
+            </tr>
+        </table>
+    </form>
+
+    <script language="JavaScript">
+        <!--
+        function Validate() {
+            let valid = false;
+            let name = document.getElementById("name").value;
+            let age = document.getElementById("age").value;
+
+            let name_re = new RegExp("^[A-Z][a-zA-Z '-.]+$", "g");
+            let age_re = new RegExp("^[\\d]+$", "g");
+
+            if (name.match(name_re)) {
+                // only validate the age if the name is OK
+                if (age.match(age_re)) {
+                    // name and age are both valid
+                    valid = true;
+                } else {
+                    alert("Age does not match " + age_re);
+                }
+            } else {
+                alert("Name does not match " + name_re);
+            }
+            if (valid === true) {
+                document.forms[0].submit();
+            }
+        }
+        //-->
+    </script>
+</body>
+</html>

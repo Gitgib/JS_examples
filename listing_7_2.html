@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Anatomy of Event LIstener</title>
+</head>
+<body>
+<button type="button" id="btn">Button</button>
+<script language="JavaScript">
+    (function() {
+        let btn = document.getElementById("btn");
+        if(btn.addEventListener) {
+            btn.addEventListener("click", function () {
+                alert('Clicked the button');
+            }, false);
+        } else {
+            btn.attachEvent("click", function () {
+                alert('Clicked the button');
+            });
+        }
+    })();
+</script>
+</body>
+</html>

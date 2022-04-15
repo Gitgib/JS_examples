@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Multiple Pages in a Single Download</title>
+    <link rel="stylesheet" href="css/multiStyle.css">
+    <script language="JavaScript">
+        let active = 0;
+
+        function ChangeLayer(now) {
+            document.getElementById("content" + active).style.visibility = "hidden";
+            document.getElementById("content" + now).style.visibility = "visible";
+            active = now;
+        }
+    </script>
+</head>
+<body>
+<div id="menua" style="top: 5px; left: 5px; visibility: visible; position: absolute; z-index: 5; width: 90%">
+    <p class="SWITCH">
+        <a href="#" onclick="ChangeLayer(0)">One</a>
+        <a href="#" onclick="ChangeLayer(1)">Two</a>
+        <a href="#" onclick="ChangeLayer(2)">Three</a>
+    </p>
+</div>
+
+<div id="content0" style="top: 60px; left: 20px; visibility: visible; position: absolute;">
+    <h1>A test header</h1>
+    <p>Here's some text</p>
+    <hr>
+</div>
+
+<div id="content1" style="top: 60px; left: 20px; visibility: hidden; position: absolute;">
+    <h1>Another test header</h1>
+    <p>Here's some more text</p>
+    <hr>
+</div>
+
+<div id="content2" style="top: 60px; left: 20px; visibility: hidden; position: absolute;">
+    <h1>Yet another test header</h1>
+    <p>Here's yet more text</p>
+    <hr>
+</div>
+</body>
+</html>

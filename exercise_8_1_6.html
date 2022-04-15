@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 6 of Chapter 8 in Basic Dynamic HTML</title>
+</head>
+<body>
+<form method="post" action="#">
+    <table border="0">
+        <tr>
+            <th>Name:</th>
+            <td><input type="text" maxlength="24" id="name"></td>
+        </tr>
+        <tr>
+            <th>Age:</th>
+            <td><input type="text" size="3" maxlength="3" id="age"></td>
+        </tr>
+        <tr>
+            <th>E-mail:</th>
+            <td><input type="email" maxlength="24" id="mail"></td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="Submit" onclick="Validate()"></td>
+            <td><input type="reset" value="Reset"></td>
+        </tr>
+    </table>
+</form>
+
+
+<script language="JavaScript">
+    <!--
+    function Validate() {
+        let valid = false;
+        let name = document.getElementById("name").value;
+        let age = document.getElementById("age").value;
+        let mail = document.getElementById("mail").value;
+
+        if ((typeof(name) === "string") && (isNaN(name))) {
+            if (typeof(age) === "number") {
+                if (typeof(mail) === "string") {
+                    valid = true;
+                } else {
+                    alert("Mail is not valid");
+                }
+            } else {
+                alert("Age is not valid");
+            }
+        } else {
+            alert("Name is not valid");
+        }
+        if (valid === true) {
+            document.forms[0].submit();
+        }
+    }
+    //-->    
+</script>
+</body>
+</html>

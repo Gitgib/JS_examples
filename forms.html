@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Form Object</title>
+    <script language="JavaScript">
+        function validate() {
+            var method = document.forms[0].method;
+            var action = document.forms[0].action;
+            var value = document.forms[0].elements[0].value;
+            if(value != "Mary"){
+                document.forms[0].reset();
+            } else {
+                alert("Hi Mary!!");
+            }
+        }
+    </script>
+</head>
+<body>
+<form method="post">
+    <input type="text" id="user" size="32" />
+    <input type="submit" value="Press Me!" onclick="validate()ee" />
+</form>
+</body>
+</html>

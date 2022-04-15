@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Text-Only Menu System</title>
+    <link rel="stylesheet" href="css/multiStyle.css">
+    <script language="JavaScript">
+        var active = 0;
+
+        function Highlight(id) {
+            document.getElementById("menua").style.visibility = "hidden";
+            document.getElementById("menu" + id + "b").style.visibility = "visible";
+        }
+
+        function UnHighlight(id) {
+            document.getElementById("menu" + id + "b").style.visibility = "hidden";
+            document.getElementById("menua").style.visibility = "visible";
+        }
+    </script>
+</head>
+<body>
+    <div id="menua" style="top: 5px; left: 5px; visibility: visible; position: absolute; z-index: 5;">
+        <p class="SWITCH">
+            <a href="#" onmouseover="Highlight(0)" onmouseout="UnHighlight(0)">One</a>
+            <a href="#" onmouseover="Highlight(1)" onmouseout="UnHighlight(1)">Two</a>
+            <a href="#" onmouseover="Highlight(2)" onmouseout="UnHighlight(2)">Three</a>
+        </p>
+    </div>
+
+    <div id="menu0b" style="top: 5px; left: 5px; visibility: hidden; position: absolute; z-index: 5;">
+        <p class="SWITCH">
+            <span class="OVER"><a href="#">One</a></span>
+            <a href="#">Two</a>
+            <a href="#">Three</a>
+        </p>
+    </div>
+
+    <div id="menu1b" style="top: 5px; left: 5px; visibility: hidden; position:absolute; z-index: 5;">
+        <p class="SWITCH">
+            <a href="#">One</a>
+            <span class="OVER"><a href="#">Two</a></span>
+            <a href="#">Three</a>
+        </p>
+    </div>
+
+    <div id="menu2b" style="top: 5px; left: 5px; visibility: hidden; position: absolute; z-index: 5;">
+        <p class="SWITCH">
+            <a href="#">One</a>
+            <a href="#">Two</a>
+            <span class="OVER"><a href="#">Three</a></span>
+        </p>
+    </div>
+</body>
+</html>

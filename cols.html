@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Columns</title>
+    <script language="JavaScript" src="JS/picker.js"></script>
+</head>
+<body bgcolor="white" text="red">
+<h1 align="center">Chris's HomeBrew Color Picker</h1>
+
+<form>
+    <table align="center" border="0" cellpadding="5">
+        <tr>
+            <td colspan="4" align="center">
+                <h2>Enter Color Values in the Boxes</h2>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h3>Background Color</h3>
+            </td>
+            <td>
+                <input type="text" size="16" name="bgcol" value="white">
+            </td>
+            <td>
+                <h3>Text Color</h3>
+            </td>
+            <td>
+                <input type="text" size="16" name="fgcol" value="black">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h3>Table Headings</h3>
+            </td>
+            <td>
+                <input type="text" size="16" name="thcol" value="black">
+            </td>
+            <td>
+                <h3>Table Data</h3>
+            </td>
+            <td>
+                <input type="text" size="16" name="tdcol" value="black">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">
+                <input type="button" value="Show It!!" onclick="ShowIt()">
+            </td>
+            <td colspan="2" align="center">
+                <input type="reset" value="Reset It">
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Find the max in an array of objects</title>
+</head>
+<body>
+<script>
+    const list = [
+        { shoe: 'Nike', size: 3},
+        { shoe: 'Adidas', size: 1},
+        { shoe: 'Fila', size: 2}
+    ];
+
+    list.sort(function (a, b) {
+        return b.size - a.size;
+    });
+
+    console.log(list);
+</script>
+</body>
+</html>
