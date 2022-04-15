@@ -1,0 +1,11 @@
+/* this is the default state of the image */
+.visible {
+    position: static;
+}
+
+/* this is applied when our class is changed and moves the image out of view */
+.hidden {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}

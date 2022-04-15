@@ -1,0 +1,24 @@
+{
+"addressBook" : [
+{
+"name": "nikos",
+"email": "nikos@example.com"
+},
+{
+"name": "asterios",
+"email": "asterios@example.com"
+},
+{
+"name": "gitsa",
+"email": "gitsa@example.com"
+},
+{
+"name": "popi",
+"email": "popi@example.com"
+},
+{
+"name": "laki",
+"email": "laki@example.com"
+}
+]
+}

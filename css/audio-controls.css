@@ -1,0 +1,11 @@
+#controls {
+    padding: 20px;
+}
+
+.playing {
+    background: #eeeeee;
+}
+
+.stopped {
+    background: #ccc;
+}
